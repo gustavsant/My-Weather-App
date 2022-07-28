@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://www.10wallpaper.com/wallpaper/1920x1080/1409/Sunny_Day-Desktop_Wallpaper_1920x1080.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerDiv > .weatherHeader{
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weatherHeader > .weatherIcon img{
+    width: 100%;
+    height: auto;
+}
+.weatherHeader > .weatherSearch{
+    display: flex;
+    align-items: center;
+}
+.weatherSearch input{
+    height: 100%;
+    border-radius: 8px;
+    width: auto;
+    outline: none;
+    background-color: #ffffff26;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+.weatherSearch input::placeholder{
+    color: white;
+    font-size: 1.1rem;
+}
+.weatherSearch span:hover{
+    cursor: pointer;
+}
+.centerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 40vw;
+    backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.3);
+    border-radius: 50px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.mainContent{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.mainContent > h1{
+    font-size: 8rem;
+    padding: 20px 0;
+}
+.mainContent > h2{
+    padding: 50px 0;
+}
+.material-icons{
+    padding-left: 10px;
+}
+.city{
+    display: flex;
+    align-items: center;
+}
+

@@ -51,6 +51,7 @@ main{
 .weatherSearch input::placeholder{
     color: white;
     font-size: 1.1rem;
+    opacity: 40%;
 }
 .weatherSearch span:hover{
     cursor: pointer;

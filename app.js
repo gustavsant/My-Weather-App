@@ -7,14 +7,16 @@ const time = document.querySelector('.centerDiv .time')
 const greetings = document.querySelector('.greetings')
 const api = {
     key: 'c706a5262fa327f359ff4e388bb7c79b',
-    base: 'https://api.openweathermap.org/data/2.5/'
-}
+    base: 'https://api.openweathermap.org/data/2.5/'}
 const data = new Date()
 let statIcon = document.querySelectorAll('.statIcon')
-
-
-
 let horas = data.getHours()
+
+searchBox.addEventListener('keypress', SetCity)
+searchButton.addEventListener('click', () => {
+    GetResults(searchBox.value)
+})
+
 function DataBuild(){
     let diaS = data.getDay()
     let diaM = data.getDate()
@@ -57,12 +59,6 @@ function ChangeWallpaper(hr, status){
         }
     }
 }
-
-searchBox.addEventListener('keypress', SetCity)
-searchButton.addEventListener('click', () => {
-    GetResults(searchBox.value)
-})
-
 function SetCity(event){
     if(event.keyCode == 13){
        GetResults(searchBox.value)

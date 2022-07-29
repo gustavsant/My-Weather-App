@@ -4,3 +4,4 @@
 3º commit: primeira vez mexendo com api, codei o script do documento e tentei deixar mais  <br>responsivo
 4º commit: atualizando o README.md <br>
 5º commit: adicionado data, dia e muda o icone dependendo do status do clima  <br>
+:D

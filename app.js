@@ -49,7 +49,7 @@ function ChangeWallpaper(hr, status){
         if(status == 'Rain'){
             document.body.style.backgroundImage = "url('images/rainy-afternoon.jpg')"
         }else{
-            document.body.style.backgroundImage = "url('images/afternoon.jpg')"
+            document.body.style.backgroundImage = "url('images/afternoon.jpeg')"
         }
     }else{
         if(status == 'Rain'){

@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg');
+    background-image: url('https://eskipaper.com/images/sunny-day-background-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,9 +17,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-div{
-    border: 1px solid tomato;
 }
 #mobileIcon{
     display: none;

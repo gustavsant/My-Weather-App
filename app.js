@@ -11,10 +11,10 @@ const api = {
 }
 const data = new Date()
 let statIcon = document.querySelectorAll('.statIcon')
+
+
+
 let horas = data.getHours()
-
-
-
 function DataBuild(){
     let diaS = data.getDay()
     let diaM = data.getDate()
@@ -36,8 +36,26 @@ function DataBuild(){
 function GreetingsWriter(txt){
     greetings.innerHTML = `<strong>${txt}</strong>`
 }
-function ChangeWallpaper(){
-    console.log('oi')
+function ChangeWallpaper(hr, status){
+    if(hr >= 5 && hr <= 12){
+        if(status == 'Rain'){
+            document.body.style.backgroundImage = "url('images/rainy-day2.jpg')"
+        }else{
+            document.body.style.backgroundImage = "url('images/day.jpg')"
+        }
+    }else if(hr >= 12 && hr < 18){
+        if(status == 'Rain'){
+            document.body.style.backgroundImage = "url('images/rainy-afternoon.jpg')"
+        }else{
+            document.body.style.backgroundImage = "url('images/afternoon.jpg')"
+        }
+    }else{
+        if(status == 'Rain'){
+            document.body.style.backgroundImage = "url('images/rainy-night2.jpg')"
+        }else{
+            document.body.style.backgroundImage = "url('images/night.jpg')"
+        }
+    }
 }
 
 searchBox.addEventListener('keypress', SetCity)
@@ -87,6 +105,7 @@ function DisplayResults(weather){
         cs.innerHTML = `${newCs}ºc`
         let status = weather.weather[0].main
         ChangeStatusIcon(status)
+        ChangeWallpaper(horas, status)
 
 
 

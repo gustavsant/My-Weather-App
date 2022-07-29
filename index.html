@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -15,23 +16,25 @@
         <div class="centerDiv">
             <div class="weatherHeader">
                 <div class="weatherIcon">
-                    <img src="baseline_cloud_white_48dp.png" alt="">
+                    <img src="baseline_cloud_white_48dp.png" alt="" class="statIcon">
                 </div>
-                <div class="weatherSearch"><label><input type="text" placeholder="Search..."></label>
-                    <span
-                        class="material-icons">search
-                    </span>
+                <div class="weatherSearch">
+                    <label>
+                        <input type="text" id="cityInput" placeholder="Search...">
+                    </label>
+                    <span class="material-icons">search</span>
                 </div>
             </div>
+            <img src="baseline_cloud_white_48dp.png" alt="" id="mobileIcon" class="statIcon">
             <div class="mainContent">
                 <h3 class="minmax">min/max</h3>
                 <h1 class="graus">39ºc</h1>
             </div>
-            <div class="city">
+            <div class="cityDiv">
                 <span class="material-icons">
                     location_on
                 </span>
-                <h2>Cidade</h2>
+                <h2 class="city">Cidade</h2>
             </div>
         </div>
     </main>

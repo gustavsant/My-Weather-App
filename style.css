@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://www.10wallpaper.com/wallpaper/1920x1080/1409/Sunny_Day-Desktop_Wallpaper_1920x1080.jpg');
+    background-image: url('https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+div{
+    border: 1px solid tomato;
 }
 #mobileIcon{
     display: none;
@@ -30,6 +33,7 @@ main{
 }
 .weatherHeader > .weatherIcon img{
     width: 100%;
+    padding-right: 20px;
 }
 .weatherHeader > .weatherSearch{
     display: flex;
@@ -67,6 +71,9 @@ main{
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+.centerDiv .greetings{
+    margin-top: 30px;
+}
 .mainContent{
     height: auto;
     display: flex;
@@ -79,7 +86,7 @@ main{
     font-size: 8rem;
     padding: 20px 0;
 }
-.mainContent h3{
+.mainContent h4{
     font-size: 0.8rem;
 }
 .mainContent > h2{
@@ -91,6 +98,9 @@ main{
 .cityDiv{
     display: flex;
     align-items: center;
+}
+.centerDiv > .time{
+    margin-top: 50px;
 }
 @media (max-width: 900px){
     .weatherHeader > .weatherIcon img{
@@ -117,5 +127,8 @@ main{
     }
     .mainContent > h1{
         font-size: 5rem;
+    }
+    .centerDiv .greetings{
+        margin-top: 15px;
     }
 }
